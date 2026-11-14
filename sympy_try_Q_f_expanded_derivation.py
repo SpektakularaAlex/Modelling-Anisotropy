@@ -13,5 +13,5 @@ Q = (1/(v**2)) * sp.diff((v**2) * G, v) - (1/v) * sp.diff(mu*G, mu)
 # sp.pprint(f"Q={Q}")
 
 Qc = sp.collect(sp.expand(Q), mu)
-sp.pprint(Qc)          # 2D pretty print in the terminal
-print(sp.latex(Qc, mode="equation"))    # paste into Overleaf
+sp.pprint(Qc)         
+print(sp.latex(Qc, mode="equation"))  
